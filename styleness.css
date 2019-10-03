@@ -67,7 +67,7 @@ div.content h2{
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
     height: auto;
@@ -90,7 +90,7 @@ div.content h2{
   }
   div.content {margin-left: 0;}
 }
-@media screen and (max-width: 400px){
+@media only screen and (max-width: 400px){
 	.sidebar{
 		overflow: hidden;
 		background-color: white;
