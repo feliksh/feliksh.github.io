@@ -1,0 +1,139 @@
+body {
+	margin: 0;
+}
+
+.sidebar{
+	margin: 0;
+	height: 100%;
+	width: 200px;
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1; /* Stay on top */
+	overflow-x: hidden; /* Disable horizontal scroll */
+
+	padding-top: 150px;
+
+	border-right-style: solid;
+	border-right-width: 1;
+	border-right-color: black;
+	text-align: right;
+}
+
+.sidebar .icon{
+	display: none;
+}
+.sidebar .hidemobile{
+	display: block;
+}
+/* The navigation menu links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #1976d2;
+  display: block;
+}
+
+.sidebar a.active{
+	border-right: solid #1976d2 3px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover:not(.active) {
+  background-color: #e0e0e0;
+  color: #1565c0;
+}
+
+.myname{
+	background-color: blue;
+	margin-left: 11%;
+	padding-left: 2%;
+	margin-top: 2%;
+	font-size: 28px;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	border-bottom-color: black;
+}
+
+div.content{
+	margin-left: 200px; /* Same as the width of the sidenav */
+	padding: 1px 16px;
+	height: 1000px;
+	font-size: 20px; /* Increased text to enable scrolling */
+	font-family: "Lora", serif
+}
+
+div.content h2{
+	color: #212121;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 0;
+  }
+  .sidebar .hidemobile{
+	display: block;
+  }
+  .sidebar a {
+  	float: left;
+  	padding: 16px;
+  }
+  .sidebar .icon{
+  	display: none;
+  }
+  .sidebar a.active{
+  	border-right: 0;
+  	border-bottom: solid #1976d2 2px;
+  }
+  div.content {margin-left: 0;}
+}
+@media screen and (max-width: 400px){
+	.sidebar{
+		overflow: hidden;
+		background-color: white;
+		position: relative;
+	}
+	.sidebar .hidemobile{
+		display: none;
+	}
+	.sidebar a{
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		display: block;
+		float: none;
+		text-align: left;
+	}
+	.sidebar a.icon{
+		background: white;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		color: #1976d2;
+	}
+	/* Style the active link (or home/logo) */
+	.sidebar a.active {
+		background-color: white;		
+		border-bottom: 0;
+		border-left: solid #1976d2 3px;
+	} 
+}
+
+/*@media screen and (max-width: 400px) {
+	.sidebar{
+		border-bottom: solid black 1px;
+	}
+  .sidebar a {
+    text-align: center;
+    float: none;
+    padding: 10px;
+  }
+  .sidebar a.active{
+  	border-bottom: 0;
+  	border-left: solid #1976d2 5px;
+  }
+}*/

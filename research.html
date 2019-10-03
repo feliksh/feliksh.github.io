@@ -1,4 +1,39 @@
 <html>
-Nothing here
+  <head>
+    <link href="styleness.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:normal,b,i,bi" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="sidebar">
+      <a href="index.html" class="hidemobile"> Home </a>
+      <a href="research.html" class="active"> Research </a>
+      <a href="aboutme.html" class="hidemobile"> About Me </a>
+      <a href="cv.html" class="hidemobile"> CV </a>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="content">
+      <h2>
+        Feliks Hibraj       
+      </h2>
+      <hr>
+      This page shows my research. Under construction...
+    </div>
 
+    <script>
+      function myFunction() {
+        var x = document.getElementsByClassName("hidemobile");
+        for (var i = 0; i < x.length; i++) {
+          if (x[i].style.display === "block") {
+            x[i].style.display = "none";
+          } else {
+            x[i].style.display = "block";
+          }
+        }
+      }
+    </script>
+  </body>
 </html>
