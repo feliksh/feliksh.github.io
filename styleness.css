@@ -66,7 +66,7 @@ div.content h2{
 	color: #212121;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+/* On smaller screens, change the style of the sidebar */
 @media only screen and (max-width: 800px) {
   .sidebar {
     width: 100%;
