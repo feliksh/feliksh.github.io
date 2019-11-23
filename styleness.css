@@ -2,6 +2,43 @@ body {
 	margin: 0;
 }
 
+.header{
+	width: 100%;
+	height: 70px;
+	padding: 10px 0 10px 0;
+	font-size: 30px;
+	border-bottom: solid gray 2px;
+	color: #212121;
+	font-weight: bold;
+}
+
+.h-name{
+	height: 100%;
+	float: left;
+	line-height: 70px;
+}
+
+.h-img{
+	margin-left: 10px;
+	float:left;
+	display: none;
+}
+
+.h-img img{
+	border-radius: 50%;
+	width: 70px;
+}
+
+.lu-img{
+	height: 200px;
+	width: 200px;
+}
+.lu-img img{
+	height: 130px;
+	border-radius: 40%;
+	padding-right: 10px;
+	padding-top: 10px;
+}
 .sidebar{
 	margin: 0;
 	height: 100%;
@@ -10,11 +47,11 @@ body {
 	z-index: 1; /* Stay on top */
 	overflow-x: hidden; /* Disable horizontal scroll */
 
-	padding-top: 150px;
+	/*padding-top: 150px;*/
 
 	border-right-style: solid;
-	border-right-width: 1;
-	border-right-color: black;
+	border-right-width: 2px;
+	border-right-color: #607d8b;
 	text-align: right;
 }
 
@@ -26,7 +63,7 @@ body {
 }
 /* The navigation menu links */
 .sidebar a {
-  padding: 6px 8px 6px 16px;
+  padding: 6px 10px 6px 16px;
   text-decoration: none;
   font-weight: bold;
   color: #1976d2;
@@ -42,6 +79,37 @@ body {
   background-color: #e0e0e0;
   color: #1565c0;
 }
+
+.social{
+	padding-top: 50px;
+	line-height: 50px;
+}
+.social a{
+	display: block;
+	float: right;
+	text-align: center;
+	border: solid #e0e0e0 2px;
+	border-radius: 50%;
+	margin-right: 5px; 
+}
+.social .fa{
+  padding: 15px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+.social .fa:hover{
+	opacity: 0.7;
+}
+.social .fa-github{
+	background: white;
+ 	color: #1976d2;
+}
+.social .fa-linkedin{
+	color: #1976d2;
+}
+.clear{clear: "both";}
 
 .myname{
 	background-color: blue;
@@ -66,6 +134,16 @@ div.content h2{
 	color: #212121;
 }
 
+div.content .mymusic{
+	display: block;
+}
+
+div.content img{
+	width: 120px;
+	height: 120px;
+	padding-right: 15px;
+}
+
 /* On smaller screens, change the style of the sidebar */
 @media only screen and (max-width: 700px) {
   .sidebar {
@@ -79,7 +157,7 @@ div.content h2{
   }
   .sidebar a {
   	float: left;
-  	padding: 16px;
+  	padding: 12px;
   }
   .sidebar .icon{
   	display: none;
@@ -89,6 +167,9 @@ div.content h2{
   	border-bottom: solid #1976d2 2px;
   }
   div.content {margin-left: 0;}
+  .lu-img{display: none;}
+  .h-img{display: block;}
+  .social{display: none;}
 }
 @media only screen and (max-width: 400px){
 	.sidebar{
@@ -121,6 +202,9 @@ div.content h2{
 		border-bottom: 0;
 		border-left: solid #1976d2 3px;
 	} 
+	.h-name{
+		font-size: 28px;
+	}
 }
 
 /*@media screen and (max-width: 400px) {
