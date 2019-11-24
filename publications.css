@@ -1,0 +1,38 @@
+.publication img{
+	float: left;
+	width: 70px;
+}
+
+.publication img:hover{
+	background-color: #bdbdbd;
+	border-radius: 20%;
+}
+
+.pub-title a{
+	text-decoration: none;
+	font-size: 18px;
+	padding-left: 10px;
+}
+
+.pub-title{
+	font-weight: bold;
+	color: #424242;
+	margin: 0 0 0 0;
+}
+
+.pub-authors{
+	color: #424242;
+	margin: 5px 0 0 0;
+	font-size: 18px;
+}
+
+.pub-authors b{
+	color: #424242;
+}
+
+.pub-conf{
+	color: #424242;
+	margin: 5px 0 0 0;
+	font-size: 18px;
+	height: 40px;
+}

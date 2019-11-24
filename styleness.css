@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	background-color: #e0e0e0;
 }
 
 .header{
@@ -8,10 +9,38 @@ body {
 	padding: 10px 0 10px 0;
 	font-size: 30px;
 	border-bottom: solid gray 2px;
-	color: #212121;
+	color: #1976d2;
 	font-weight: bold;
 }
 
+.title{
+	font-size: 25px;
+	font-weight: bold;
+	color: #424242;
+	margin: 5px 0 5px 0;
+}
+
+.simplelink{
+	text-decoration: none;
+	color: #1976d2;
+	font-weight: bold;
+}
+.simplelink:hover{
+	background-color: #bdbdbd;
+}
+
+.makeitblue{
+	color: #1976d2;
+}
+.aboutme{
+	max-width: 700px;
+}
+#contacts{
+	margin: 10px;
+}
+#contacts b{
+	margin-right: 10px;
+}
 .h-name{
 	height: 100%;
 	float: left;
@@ -76,7 +105,7 @@ body {
 
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover:not(.active) {
-  background-color: #e0e0e0;
+  background-color: #bdbdbd;
   color: #1565c0;
 }
 
@@ -88,7 +117,7 @@ body {
 	display: block;
 	float: right;
 	text-align: center;
-	border: solid #e0e0e0 2px;
+	border: solid #bdbdbd 2px;
 	border-radius: 50%;
 	margin-right: 5px; 
 }
@@ -103,7 +132,6 @@ body {
 	opacity: 0.7;
 }
 .social .fa-github{
-	background: white;
  	color: #1976d2;
 }
 .social .fa-linkedin{
@@ -127,7 +155,8 @@ div.content{
 	padding: 1px 16px;
 	height: 1000px;
 	font-size: 20px; /* Increased text to enable scrolling */
-	font-family: "Lora", serif
+	font-family: "Lora", serif;
+	color: #212121;
 }
 
 div.content h2{
@@ -169,12 +198,13 @@ div.content img{
   div.content {margin-left: 0;}
   .lu-img{display: none;}
   .h-img{display: block;}
+  .h-img img{max-width: 80px; max-height: 80px;}
   .social{display: none;}
 }
 @media only screen and (max-width: 400px){
 	.sidebar{
 		overflow: hidden;
-		background-color: white;
+		background-color: #e0e0e0;
 		position: relative;
 	}
 	.sidebar .hidemobile{
@@ -189,7 +219,7 @@ div.content img{
 		text-align: left;
 	}
 	.sidebar a.icon{
-		background: white;
+		background: #e0e0e0;
 		display: block;
 		position: absolute;
 		right: 0;
@@ -198,7 +228,7 @@ div.content img{
 	}
 	/* Style the active link (or home/logo) */
 	.sidebar a.active {
-		background-color: white;		
+		background-color: #e0e0e0;		
 		border-bottom: 0;
 		border-left: solid #1976d2 3px;
 	} 

@@ -2,6 +2,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styleness.css" rel="stylesheet" type="text/css">
+    <link href="publications.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora:normal,b,i,bi" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -9,7 +10,7 @@
     <div class="sidebar">
       <div class="lu-img"><img src="web1.jpg" alt="profile image"></div>
       <a href="index.html" class="active"> Home </a>
-      <a href="research.html" class="hidemobile"> Research </a>
+      <!-- <a href="research.html" class="hidemobile"> Research </a> -->
       <a href="contact.html" class="hidemobile"> Contact </a>
       <a href="aboutme.html" class="hidemobile"> About Me </a>
       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
@@ -17,8 +18,8 @@
         <i class="fa fa-bars"></i>
       </a>
       <div class="social">
-        <a href="#" class="fa fa-github"></a>
-        <a href="#" class="fa fa-linkedin"></a>
+        <a href="https://github.com/feliksh" target="_blank" class="fa fa-github"></a>
+        <a href="https://www.linkedin.com/in/feliks-hibraj" target="_blank" class="fa fa-linkedin"></a>
         <div class="clear"></div>
       </div>
     </div>
@@ -28,16 +29,29 @@
         <div class="h-img">
           <img src="web1.jpg" alt="profile image"></div>
         </div>
-      I'am a Master student at Ca' Foscari University, Venice, Italy.
-      <hr>
-      <div class="mymusic">
-        <p>My music:</p>
-        <img src="cover1.jpg" alt="Album Cover 1" class="cover">
-        <img src="cover2.jpg" alt="Album Cover 2" class="cover">
-        <img src="cover3.jpg" alt="Album Cover 3" class="cover">
-        <img src="cover4.jpg" alt="Album Cover 4" class="cover">
 
+      <p class="title">About</p>
+      Currently a Master student at Ca' Foscari University, Venice, Italy.<br>
+      Completed Bachelor in Computer Science (2014-2017), appointed best foreign student
+      (speech in italian <a href="youtube.com" class="simplelink">here</a>). 
+      <br>
+      Bachelor thesis on Speaker clustering, which resulted in a publication
+
+      <hr>
+
+      <div class="publication">
+        <a href="https://arxiv.org/pdf/1805.08641" target="_blank">
+          <img src="paper1.svg" alt="image for publication 1">
+        </a>
+        <p class="pub-title"> Speaker Clustering using Dominant Sets 
+          <a href="https://arxiv.org/pdf/1805.08641" target="_blank" class="simplelink"> [link] </a>
+        </p>
+        <p class="pub-authors"> <b>F. Hibraj</b>*, S. Vascon*, T. Stadelmann, M. Pelillo 
+        </p>
+        <p class="pub-conf"> International Conference on Pattern Recognition (ICPR 2018)</p>
       </div>
+      <br>
+
     </div>
 
     <script>
