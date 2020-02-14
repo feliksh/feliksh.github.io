@@ -233,8 +233,9 @@ div.content img{
 		border-left: solid #1976d2 3px;
 	} 
 	.h-name{
-		font-size: 28px;
+		font-size: 24px;
 	}
+	div.content{ font-size: 16px;}
 }
 
 /*@media screen and (max-width: 400px) {

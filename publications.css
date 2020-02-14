@@ -10,7 +10,7 @@
 
 .pub-title a{
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 80%;
 	padding-left: 10px;
 }
 
@@ -23,7 +23,7 @@
 .pub-authors{
 	color: #424242;
 	margin: 5px 0 0 0;
-	font-size: 18px;
+	font-size: 80%;
 }
 
 .pub-authors b{
@@ -33,6 +33,6 @@
 .pub-conf{
 	color: #424242;
 	margin: 5px 0 0 0;
-	font-size: 18px;
+	font-size: 80%;
 	height: 40px;
 }
