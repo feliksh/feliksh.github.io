@@ -154,7 +154,7 @@ div.content{
 	margin-left: 200px; /* Same as the width of the sidenav */
 	padding: 1px 16px;
 	height: 1000px;
-	font-size: 20px; /* Increased text to enable scrolling */
+	font-size: 18px; /* Increased text to enable scrolling */
 	font-family: "Lora", serif;
 	color: #212121;
 }
@@ -171,6 +171,38 @@ div.content img{
 	width: 120px;
 	height: 120px;
 	padding-right: 15px;
+}
+
+ul{
+	margin: 0;
+}
+ul.sub-ul{
+	list-style-type: square;
+	color: gray;
+}
+ul a{
+	text-decoration: none;
+	color: inherit;
+}
+ul a:visited{
+	text-decoration: none;
+	color: inherit;
+}
+ul a:hover{
+	text-decoration: none;
+	color: #1976d2;
+}
+a.low{
+	text-decoration: none;
+	color: inherit;
+}
+a.low:visited{
+	text-decoration: none;
+	color: inherit;
+}
+a.low:hover{
+	text-decoration: none;
+	color: #1976d2;
 }
 
 /* On smaller screens, change the style of the sidebar */
