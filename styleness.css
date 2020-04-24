@@ -284,3 +284,11 @@ a.low:hover{
   	border-left: solid #1976d2 5px;
   }
 }*/
+
+.contacts-table th{
+	text-align: left;
+	padding-right: 10px;
+}
+.contacts-table td{
+	text-align: left;
+}
